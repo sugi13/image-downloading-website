@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #27052D;
+    color: #BD4E7F;;
+    padding: 20px;
+}
+.container-1 h1{
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 5px;
+}
+.container-1 input{
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 900;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+::placeholder{
+    opacity: 0.3;
+}
+#search-btn{
+    background: #F5594A;
+    color: #E8E0F4;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+#downloadBtn{
+padding:5px;
+text-decoration: none;
+font-family: 'Space Mono', monospace;
+border-radius: 5px;
+position: relative;
+top: -50px;
+left: 350px;
+background-color: rgb(255, 255, 255 , .7);
+cursor: pointer;
+}
+
+/* container-2 */
+.container-2{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 50px;
+    padding: 10px;
+}
+.container-2 h2{
+    font-weight: 900;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+}
+.img-container{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+}
+.img-container img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-1 h1{
+        letter-spacing: 0;
+    }
+    .container-1 input{
+        width: auto;
+    }
+    .container-1 button{
+        padding: 10px;
+    }
+    .container-2{
+        margin: 10px;
+        text-align: center;
+    }
+    .container-2 h2{
+        opacity: 0.5;
+    }
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -40px;
+    }
+    .img-container img{
+        width: 100%;
+        height: auto;
+    }
+    #downloadBtn{
+        position: relative;
+        top: -45px;
+        left: 100px;
+    }
+}
